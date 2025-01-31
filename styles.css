@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    perspective: 1000px;
+    background-color: #9d1717; /* fondo oscruo*/
+}
+
+.scene {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(360deg); }
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 0, 0, 0.5);
+    border: 1px solid #fff;
+}
